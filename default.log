@@ -1,0 +1,332 @@
+[2020-10-21 18:34:06][14] Processing: App\Jobs\JobAddTicket
+[2020-10-21 18:34:06][15] Processing: App\Jobs\JobAddTicket
+[2020-10-21 18:34:06][16] Processing: App\Jobs\JobAddTicket
+[2020-10-21 18:34:06][16] Failed:     App\Jobs\JobAddTicket
+[2020-10-21 18:38:32][17] Processing: App\Jobs\JobAddTicket
+[2020-10-21 18:38:32][18] Processing: App\Jobs\JobAddTicket
+[2020-10-21 18:38:32][19] Processing: App\Jobs\JobAddTicket
+[2020-10-21 18:38:32][19] Failed:     App\Jobs\JobAddTicket
+[2020-10-21 18:38:46][20] Processing: App\Jobs\JobAddTicket
+[2020-10-21 18:38:46][21] Processing: App\Jobs\JobAddTicket
+[2020-10-21 18:38:46][22] Processing: App\Jobs\JobAddTicket
+[2020-10-21 18:38:46][22] Failed:     App\Jobs\JobAddTicket
+[2020-10-21 18:40:25][23] Processing: App\Jobs\JobAddTicket
+[2020-10-21 18:40:25][24] Processing: App\Jobs\JobAddTicket
+[2020-10-21 18:40:25][25] Processing: App\Jobs\JobAddTicket
+[2020-10-21 18:40:25][25] Failed:     App\Jobs\JobAddTicket
+[2020-10-21 18:40:50][26] Processing: App\Jobs\JobAddTicket
+[2020-10-21 18:40:50][27] Processing: App\Jobs\JobAddTicket
+[2020-10-21 18:40:50][28] Processing: App\Jobs\JobAddTicket
+[2020-10-21 18:40:50][28] Failed:     App\Jobs\JobAddTicket
+[2020-10-21 19:07:32][30] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:07:32][31] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:07:32][32] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:07:32][32] Failed:     App\Jobs\JobAddTicket
+[2020-10-21 19:10:30][33] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:10:30][34] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:10:30][35] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:10:30][35] Failed:     App\Jobs\JobAddTicket
+[2020-10-21 19:12:12][36] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:12:13][37] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:12:13][38] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:12:13][38] Failed:     App\Jobs\JobAddTicket
+[2020-10-21 19:18:08][39] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:18:08][40] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:18:08][41] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:18:08][41] Failed:     App\Jobs\JobAddTicket
+[2020-10-21 19:22:50][42] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:22:50][43] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:22:51][44] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:22:51][44] Failed:     App\Jobs\JobAddTicket
+[2020-10-21 19:24:09][45] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:24:10][45] Processed:  App\Jobs\JobAddTicket
+[2020-10-21 19:25:35][46] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:25:36][46] Processed:  App\Jobs\JobAddTicket
+[2020-10-21 19:27:15][47] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:27:17][47] Processed:  App\Jobs\JobAddTicket
+[2020-10-21 19:29:35][48] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:29:36][48] Processed:  App\Jobs\JobAddTicket
+PHP Fatal error:  Cannot declare class App\Console\Commands\AddTicket because the name is already in use in /home/dev/api/app/Console/Commands/AddTicket.php on line 9
+
+   Symfony\Component\ErrorHandler\Error\FatalError 
+
+  Cannot declare class App\Console\Commands\AddTicket because the name is already in use
+
+  at /home/dev/api/app/Console/Commands/AddTicket.php:9
+      5▕ use Illuminate\Console\Command;
+      6▕ use App\Services\Vendors\TomTicket\AddTicket;
+      7▕ 
+      8▕ 
+  ➜   9▕ class AddTicket extends Command
+     10▕ {
+     11▕     protected $signature = 'job:addTicket';
+     12▕     protected $description = 'Atualizar chamados do TomTicket com a base local';
+     13▕
+
+
+   Whoops\Exception\ErrorException 
+
+  Cannot declare class App\Console\Commands\AddTicket because the name is already in use
+
+  at /home/dev/api/app/Console/Commands/AddTicket.php:9
+      5▕ use Illuminate\Console\Command;
+      6▕ use App\Services\Vendors\TomTicket\AddTicket;
+      7▕ 
+      8▕ 
+  ➜   9▕ class AddTicket extends Command
+     10▕ {
+     11▕     protected $signature = 'job:addTicket';
+     12▕     protected $description = 'Atualizar chamados do TomTicket com a base local';
+     13▕
+
+      [2m+1 vendor frames [22m
+  2   [internal]:0
+      Whoops\Run::handleShutdown()
+PHP Fatal error:  Cannot declare class App\Console\Commands\AddTicket because the name is already in use in /home/dev/api/app/Console/Commands/AddTicket.php on line 9
+
+   Symfony\Component\ErrorHandler\Error\FatalError 
+
+  Cannot declare class App\Console\Commands\AddTicket because the name is already in use
+
+  at /home/dev/api/app/Console/Commands/AddTicket.php:9
+      5▕ use Illuminate\Console\Command;
+      6▕ use App\Services\Vendors\TomTicket\AddTicket;
+      7▕ 
+      8▕ 
+  ➜   9▕ class AddTicket extends Command
+     10▕ {
+     11▕     protected $signature = 'job:addTicket';
+     12▕     protected $description = 'Atualizar chamados do TomTicket com a base local';
+     13▕
+
+
+   Whoops\Exception\ErrorException 
+
+  Cannot declare class App\Console\Commands\AddTicket because the name is already in use
+
+  at /home/dev/api/app/Console/Commands/AddTicket.php:9
+      5▕ use Illuminate\Console\Command;
+      6▕ use App\Services\Vendors\TomTicket\AddTicket;
+      7▕ 
+      8▕ 
+  ➜   9▕ class AddTicket extends Command
+     10▕ {
+     11▕     protected $signature = 'job:addTicket';
+     12▕     protected $description = 'Atualizar chamados do TomTicket com a base local';
+     13▕
+
+      [2m+1 vendor frames [22m
+  2   [internal]:0
+      Whoops\Run::handleShutdown()
+PHP Fatal error:  Cannot declare class App\Console\Commands\AddTicket because the name is already in use in /home/dev/api/app/Console/Commands/AddTicket.php on line 9
+
+   Symfony\Component\ErrorHandler\Error\FatalError 
+
+  Cannot declare class App\Console\Commands\AddTicket because the name is already in use
+
+  at /home/dev/api/app/Console/Commands/AddTicket.php:9
+      5▕ use Illuminate\Console\Command;
+      6▕ use App\Services\Vendors\TomTicket\AddTicket;
+      7▕ 
+      8▕ 
+  ➜   9▕ class AddTicket extends Command
+     10▕ {
+     11▕     protected $signature = 'job:addTicket';
+     12▕     protected $description = 'Atualizar chamados do TomTicket com a base local';
+     13▕
+
+
+   Whoops\Exception\ErrorException 
+
+  Cannot declare class App\Console\Commands\AddTicket because the name is already in use
+
+  at /home/dev/api/app/Console/Commands/AddTicket.php:9
+      5▕ use Illuminate\Console\Command;
+      6▕ use App\Services\Vendors\TomTicket\AddTicket;
+      7▕ 
+      8▕ 
+  ➜   9▕ class AddTicket extends Command
+     10▕ {
+     11▕     protected $signature = 'job:addTicket';
+     12▕     protected $description = 'Atualizar chamados do TomTicket com a base local';
+     13▕
+
+      [2m+1 vendor frames [22m
+  2   [internal]:0
+      Whoops\Run::handleShutdown()
+PHP Fatal error:  Cannot declare class App\Console\Commands\AddTicket because the name is already in use in /home/dev/api/app/Console/Commands/AddTicket.php on line 9
+
+   Symfony\Component\ErrorHandler\Error\FatalError 
+
+  Cannot declare class App\Console\Commands\AddTicket because the name is already in use
+
+  at /home/dev/api/app/Console/Commands/AddTicket.php:9
+      5▕ use Illuminate\Console\Command;
+      6▕ use App\Services\Vendors\TomTicket\AddTicket;
+      7▕ 
+      8▕ 
+  ➜   9▕ class AddTicket extends Command
+     10▕ {
+     11▕     protected $signature = 'job:addTicket';
+     12▕     protected $description = 'Atualizar chamados do TomTicket com a base local';
+     13▕
+
+
+   Whoops\Exception\ErrorException 
+
+  Cannot declare class App\Console\Commands\AddTicket because the name is already in use
+
+  at /home/dev/api/app/Console/Commands/AddTicket.php:9
+      5▕ use Illuminate\Console\Command;
+      6▕ use App\Services\Vendors\TomTicket\AddTicket;
+      7▕ 
+      8▕ 
+  ➜   9▕ class AddTicket extends Command
+     10▕ {
+     11▕     protected $signature = 'job:addTicket';
+     12▕     protected $description = 'Atualizar chamados do TomTicket com a base local';
+     13▕
+
+      [2m+1 vendor frames [22m
+  2   [internal]:0
+      Whoops\Run::handleShutdown()
+[2020-10-21 19:37:00][49] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:37:00][50] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:37:00][51] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:37:00][51] Failed:     App\Jobs\JobAddTicket
+[2020-10-21 19:37:07][52] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:37:07][53] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:37:07][54] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:37:07][54] Failed:     App\Jobs\JobAddTicket
+[2020-10-21 19:38:11][55] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:38:11][56] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:38:11][57] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:38:11][57] Failed:     App\Jobs\JobAddTicket
+[2020-10-21 19:38:34][58] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:38:34][59] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:38:34][60] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:38:34][60] Failed:     App\Jobs\JobAddTicket
+[2020-10-21 19:39:45][61] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:39:46][61] Processed:  App\Jobs\JobAddTicket
+[2020-10-21 19:40:46][62] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:40:47][62] Processed:  App\Jobs\JobAddTicket
+[2020-10-21 19:42:26][63] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:42:27][63] Processed:  App\Jobs\JobAddTicket
+[2020-10-21 19:45:15][64] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:45:16][64] Processed:  App\Jobs\JobAddTicket
+[2020-10-21 19:49:08][65] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:49:08][66] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:49:08][67] Processing: App\Jobs\JobAddTicket
+[2020-10-21 19:49:08][67] Failed:     App\Jobs\JobAddTicket
+[2020-10-21 20:18:50][68] Processing: App\Jobs\JobAddTicket
+[2020-10-21 20:18:51][68] Processed:  App\Jobs\JobAddTicket
+[2020-10-21 20:21:00][69] Processing: App\Jobs\JobAddTicket
+[2020-10-21 20:21:01][69] Processed:  App\Jobs\JobAddTicket
+[2020-10-21 20:23:45][70] Processing: App\Jobs\JobAddTicket
+[2020-10-21 20:23:46][70] Processed:  App\Jobs\JobAddTicket
+[2020-10-21 20:31:13][71] Processing: App\Jobs\JobAddTicket
+[2020-10-21 20:31:14][71] Processed:  App\Jobs\JobAddTicket
+[2020-10-21 20:33:17][72] Processing: App\Jobs\JobAddTicket
+[2020-10-21 20:33:18][72] Processed:  App\Jobs\JobAddTicket
+[2020-10-21 20:34:18][73] Processing: App\Jobs\JobAddTicket
+[2020-10-21 20:34:19][73] Processed:  App\Jobs\JobAddTicket
+[2020-10-21 20:38:26][74] Processing: App\Jobs\JobAddTicket
+[2020-10-21 20:38:26][75] Processing: App\Jobs\JobAddTicket
+[2020-10-21 20:38:26][76] Processing: App\Jobs\JobAddTicket
+[2020-10-21 20:38:26][76] Failed:     App\Jobs\JobAddTicket
+[2020-10-21 20:40:42][77] Processing: App\Jobs\JobAddTicket
+[2020-10-21 20:40:43][78] Processing: App\Jobs\JobAddTicket
+[2020-10-21 20:40:44][79] Processing: App\Jobs\JobAddTicket
+[2020-10-21 20:40:44][79] Failed:     App\Jobs\JobAddTicket
+[2020-10-21 20:42:22][80] Processing: App\Jobs\JobAddTicket
+[2020-10-21 20:42:22][81] Processing: App\Jobs\JobAddTicket
+[2020-10-21 20:42:23][82] Processing: App\Jobs\JobAddTicket
+[2020-10-21 20:42:24][82] Failed:     App\Jobs\JobAddTicket
+[2020-10-21 20:44:08][83] Processing: App\Jobs\JobAddTicket
+[2020-10-21 20:44:11][83] Processed:  App\Jobs\JobAddTicket
+[2020-10-21 20:45:15][84] Processing: App\Jobs\JobAddTicket
+[2020-10-21 20:45:16][84] Processed:  App\Jobs\JobAddTicket
+[2020-10-21 20:45:23][85] Processing: App\Jobs\JobAddTicket
+[2020-10-21 20:45:24][85] Processed:  App\Jobs\JobAddTicket
+[2020-10-21 20:45:41][86] Processing: App\Jobs\JobAddTicket
+[2020-10-21 20:45:42][86] Processed:  App\Jobs\JobAddTicket
+[2020-10-21 20:48:18][87] Processing: App\Jobs\JobAddTicket
+[2020-10-21 20:48:18][88] Processing: App\Jobs\JobAddTicket
+[2020-10-21 20:48:18][89] Processing: App\Jobs\JobAddTicket
+[2020-10-21 20:48:18][89] Failed:     App\Jobs\JobAddTicket
+[2020-10-21 20:49:56][90] Processing: App\Jobs\JobAddTicket
+[2020-10-21 20:49:58][90] Processed:  App\Jobs\JobAddTicket
+[2020-10-21 20:51:34][91] Processing: App\Jobs\JobAddTicket
+[2020-10-21 20:51:36][91] Processed:  App\Jobs\JobAddTicket
+[2020-10-21 20:59:27][1] Processing: App\Jobs\JobAddTicket
+[2020-10-21 20:59:28][1] Processed:  App\Jobs\JobAddTicket
+[2020-10-22 13:34:03][7] Processing: App\Jobs\JobAddTicket
+[2020-10-22 13:34:04][7] Processed:  App\Jobs\JobAddTicket
+[2020-10-22 13:36:10][8] Processing: App\Jobs\JobAddTicket
+[2020-10-22 13:36:11][8] Processed:  App\Jobs\JobAddTicket
+[2020-10-22 13:42:43][9] Processing: App\Jobs\JobAddTicket
+[2020-10-22 13:42:45][9] Processed:  App\Jobs\JobAddTicket
+[2020-10-22 13:46:43][10] Processing: App\Jobs\JobAddTicket
+[2020-10-22 13:46:44][10] Processed:  App\Jobs\JobAddTicket
+[2020-10-23 14:43:19][1] Processing: App\Jobs\JobAddTicket
+[2020-10-23 14:43:20][1] Processed:  App\Jobs\JobAddTicket
+[2020-10-23 15:18:24][2] Processing: App\Jobs\JobAddTicket
+[2020-10-23 15:18:25][2] Processed:  App\Jobs\JobAddTicket
+[2020-10-23 15:59:19][3] Processing: App\Jobs\JobAddTicket
+[2020-10-23 15:59:26][3] Processed:  App\Jobs\JobAddTicket
+[2020-10-23 17:38:41][1] Processing: App\Jobs\JobAddTicket
+[2020-10-23 17:38:42][1] Processed:  App\Jobs\JobAddTicket
+[2020-10-23 18:13:25][2] Processing: App\Jobs\JobAddTicket
+[2020-10-23 18:13:26][2] Processed:  App\Jobs\JobAddTicket
+[2020-10-23 18:34:26][3] Processing: App\Jobs\JobAddTicket
+[2020-10-23 18:34:27][3] Processed:  App\Jobs\JobAddTicket
+[2020-10-23 18:35:51][4] Processing: App\Jobs\JobAddTicket
+[2020-10-23 18:35:53][4] Processed:  App\Jobs\JobAddTicket
+[2020-10-23 18:36:48][5] Processing: App\Jobs\JobAddTicket
+[2020-10-23 18:36:49][5] Processed:  App\Jobs\JobAddTicket
+[2020-10-26 13:18:06][1] Processing: App\Jobs\JobCreateSsl
+[2020-10-26 13:18:06][2] Processing: App\Jobs\JobCreateSsl
+[2020-10-26 13:18:06][3] Processing: App\Jobs\JobCreateSsl
+[2020-10-26 13:18:06][3] Failed:     App\Jobs\JobCreateSsl
+[2020-10-26 13:19:57][4] Processing: App\Jobs\JobCreateSsl
+[2020-10-26 13:19:57][5] Processing: App\Jobs\JobCreateSsl
+[2020-10-26 13:19:57][6] Processing: App\Jobs\JobCreateSsl
+[2020-10-26 13:19:57][6] Failed:     App\Jobs\JobCreateSsl
+[2020-10-26 13:22:31][7] Processing: App\Jobs\JobCreateSsl
+[2020-10-26 13:22:31][8] Processing: App\Jobs\JobCreateSsl
+[2020-10-26 13:22:31][9] Processing: App\Jobs\JobCreateSsl
+[2020-10-26 13:22:31][9] Failed:     App\Jobs\JobCreateSsl
+[2020-10-26 13:23:29][10] Processing: App\Jobs\JobCreateSsl
+[2020-10-26 13:23:30][11] Processing: App\Jobs\JobCreateSsl
+[2020-10-26 13:23:30][12] Processing: App\Jobs\JobCreateSsl
+[2020-10-26 13:23:30][12] Failed:     App\Jobs\JobCreateSsl
+[2020-10-26 13:26:18][13] Processing: App\Jobs\JobCreateSsl
+[2020-10-26 13:26:18][14] Processing: App\Jobs\JobCreateSsl
+[2020-10-26 13:26:18][15] Processing: App\Jobs\JobCreateSsl
+[2020-10-26 13:26:18][15] Failed:     App\Jobs\JobCreateSsl
+[2020-10-26 13:28:04][16] Processing: App\Jobs\JobCreateSsl
+[2020-10-26 13:28:04][17] Processing: App\Jobs\JobCreateSsl
+[2020-10-26 13:28:04][18] Processing: App\Jobs\JobCreateSsl
+[2020-10-26 13:28:04][18] Failed:     App\Jobs\JobCreateSsl
+[2020-10-26 13:28:28][19] Processing: App\Jobs\JobCreateSsl
+[2020-10-26 13:28:28][20] Processing: App\Jobs\JobCreateSsl
+[2020-10-26 13:28:28][21] Processing: App\Jobs\JobCreateSsl
+[2020-10-26 13:28:28][21] Failed:     App\Jobs\JobCreateSsl
+[2020-10-26 13:30:34][22] Processing: App\Jobs\JobCreateSsl
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2020/10/26 10:30:34 [warn] 7754#7754: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2020/10/26 10:30:34 [emerg] 7754#7754: SSL_CTX_use_PrivateKey_file("/etc/nginx/ssl/tickets.local.key") failed (SSL: error:0200100D:system library:fopen:Permission denied:fopen('/etc/nginx/ssl/tickets.local.key','r') error:20074002:BIO routines:file_ctrl:system lib error:140B0002:SSL routines:SSL_CTX_use_PrivateKey_file:system lib)
+[2020-10-26 13:30:34][22] Processed:  App\Jobs\JobCreateSsl
+[2020-10-26 13:31:21][23] Processing: App\Jobs\JobCreateSsl
+ln: failed to create symbolic link '/etc/nginx/sites-enabled/jonas-teste.com': File exists
+nginx: [alert] could not open error log file: open() "/var/log/nginx/error.log" failed (13: Permission denied)
+2020/10/26 10:31:22 [warn] 7773#7773: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2020/10/26 10:31:22 [emerg] 7773#7773: SSL_CTX_use_PrivateKey_file("/etc/nginx/ssl/tickets.local.key") failed (SSL: error:0200100D:system library:fopen:Permission denied:fopen('/etc/nginx/ssl/tickets.local.key','r') error:20074002:BIO routines:file_ctrl:system lib error:140B0002:SSL routines:SSL_CTX_use_PrivateKey_file:system lib)
+[2020-10-26 13:31:22][23] Processed:  App\Jobs\JobCreateSsl
+[2020-10-26 13:33:03][24] Processing: App\Jobs\JobCreateSsl
+ln: failed to create symbolic link '/etc/nginx/sites-enabled/jonas-teste.com': File exists
+[2020-10-26 13:33:03][24] Processed:  App\Jobs\JobCreateSsl
+[2020-10-26 13:33:31][25] Processing: App\Jobs\JobCreateSsl
+[2020-10-26 13:33:31][25] Processed:  App\Jobs\JobCreateSsl
+[2020-10-26 13:40:28][26] Processing: App\Jobs\JobCreateSsl
+[2020-10-26 13:40:28][26] Processed:  App\Jobs\JobCreateSsl
